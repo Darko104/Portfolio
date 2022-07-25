@@ -1,0 +1,107 @@
+/* Home */
+$left: 610px;
+.float-icon {
+    position: absolute;
+    top: 0;
+    left: $left;
+    opacity: 0;
+    color: #404040;
+    font-size: 30px;
+}
+// $top: 0px;
+#home {
+    @include flexBetweenCenter;
+    margin-top: 120px;
+    position: relative;
+
+    @for $i from 1 through 5 {
+        .float-icon:nth-of-type(#{$i}) {
+            // top: $top;
+            left: $left;
+        }
+        // $top: calc(#{$top} + 40px);
+        $left: calc(#{$left} + 30px);
+    }
+}
+.slide-home {
+    animation-name: slideHome;
+    animation-duration: 0.7s;
+}
+@keyframes slideHome {
+  from {top: -20px;}
+  to {top: 0;}
+}
+#home-info {
+    width: fit-content;
+}
+#home-title-line {
+    margin-bottom: 30px;
+}
+#home-title {
+    margin-bottom: 25px;
+    font-size: 43px;
+}
+#home-description {
+    margin-bottom: 30px;
+    color: #d9d9d9;
+}
+#home-action {
+    display: inline-flex;
+    padding: 10px 0;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        margin-right: 10px;
+        font-size: 25px;
+        font-weight: 600;
+        color: $highlightColor;
+    }
+}
+#home-icons {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            font-size: 30px;
+            color: $greyTextDarker;
+
+            :hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+/* Home - Responsive */
+@media only screen and (max-width: 1000px) {
+    nav ul {
+        gap: 20px;
+    }
+    #home-icons {
+        display: none;
+    }
+}
+@media only screen and (max-width: 875px) {
+    nav ul li:not(.open-menu) {
+        display: none;
+    }
+    .open-menu {
+        display: initial;
+        font-size: 25px;
+    }
+    #home {
+        margin-top: 90px;
+        padding: 0 50px;
+    }
+    .float-icon {
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #home-title {
+        font-size: 28px;
+        text-align: center;
+    }
+}

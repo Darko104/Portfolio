@@ -1,0 +1,64 @@
+/* Basic styles */
+.title-line {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 3px;
+}
+#tl-1 {
+    background-color: $highlightColor;
+}
+#tl-2 {
+    background-color: #777777;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Hover to right effect */
+.hover-effect {
+  display: inline-block;
+  background-image: linear-gradient($highlightColor, $highlightColor);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+  margin: 5px 0;
+  background-position: 0 calc(100% - 0px);
+  
+  &:hover {
+      background-size: 100% 2px;
+  }
+}
+/* Slide from left */
+.slide {
+  animation-name: slide;
+  animation-duration: 0.5s;
+}
+@keyframes slide {
+  from {
+    transform: translate(-70px, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+/* Smaller title */
+#small-title-line {
+  margin-bottom: 15px;
+}
+#small-title {
+  margin-bottom: 40px;
+  width: 200px;
+  font-size: 30px;
+  text-transform: capitalize;
+}

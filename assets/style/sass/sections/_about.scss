@@ -1,0 +1,109 @@
+/* About */
+#about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 45px 190px;
+}
+#image-wrapper {
+    img {
+        width: 210px;
+        height: 310px;
+        filter: grayscale(100%);
+    }
+}
+#about-description {
+    @include nonMainText;
+    margin-bottom: 35px;
+}
+.at-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#technologies-list {
+    display: inline-grid;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
+    column-gap: 30px;
+    row-gap: 10px;
+
+    li {
+        @include flex(10px);
+        display: inline-flex;
+    }
+}
+.skill-icon {
+    font-size: 25px;
+}
+.skill-name {
+    color: $greyTextDarker;
+}
+#about-contact {
+    margin-top: 25px;
+}
+#about-contact-info {
+    @include flex(25px);
+    flex-wrap: wrap;
+}
+.contact-type {
+    @include flex(10px);
+    color: $greyText1;
+}
+.ct-key {
+    @include flex(7px);
+    font-weight: 600;
+
+    i {
+        font-size: 25px;
+    }
+}
+.ct-value {
+    color: $greyText1;
+    
+    a {
+        color: $greyText1;
+        text-decoration: underline;
+    }
+}
+/* About - Responsive */
+@media only screen and (max-width: 1300px) {
+    #about {
+        padding: 45px $layoutSidePadding;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #about {
+        padding: 90px 25px;
+        gap: 30px;
+    }
+    #image-wrapper img {  
+        width: 310px;
+        height: auto;
+    }
+    #small-title {
+        margin-bottom: 20px;
+    }
+    #technologies-list {
+        grid-template-rows: repeat(2, auto);
+    }
+    #about-footer {
+        bottom: initial !important;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #image-wrapper img {
+        width: 150px;
+        height: 170px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    #image-wrapper {
+        display: none;
+    }
+    #technologies-list {
+        grid-template-rows: repeat(4, auto);
+    }
+}

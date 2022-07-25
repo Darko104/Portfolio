@@ -1,0 +1,14 @@
+@mixin flexBetweenCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex($gap) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
+@mixin nonMainText {
+    color: $greyTextDarker;
+    line-height: 20px;
+}

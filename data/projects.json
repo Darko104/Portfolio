@@ -1,0 +1,100 @@
+[
+    {
+        "name": "ClothesShop",
+        "link": "http://www.clothesshop.epizy.com/",
+        "images": [
+            "cs_home_1.png",
+            "cs_home_2.png",
+            "cs_shop_1.png",
+            "cs_product_1.png",
+            "cs_product_2.png",
+            "cs_profile_account.png",
+            "cs_profile_orders.png"
+        ],
+        "technologies": [
+            "<i class='fa-brands fa-html5'></i>",
+            "<i class='fa-brands fa-css3-alt'></i>",
+            "<i class='fa-brands fa-js'></i>",
+            "<i class='fa-brands fa-php'></i>"
+        ],
+        "functionalities": [
+            "Overview of the featured products",
+            "Searching (filtering and sorting) products",
+            "Quick overview of the product information",
+            "Detailed overview of the product information",
+            "Leaving comments about products",
+            "Rating a product (1-5)",
+            "Showcase of related products",
+            "Adding products to the basket with a desired amount",
+            "Both registered and non-registered customers can add products in the basket",
+            "If a customer is registered, checkout page form will initially be filled with customers info",
+            "Viewing past orders, their info and cancelling them if order is less than 2 days old",
+            "Adding products to wishlist",
+            "Add overall website review",
+            "Registration and sign in",
+            "Overview of users past activities (orders, comments...)",
+            "Changing users info (email, name, adress...)",
+            "Overview of users past product reviews and wishlist"
+        ],
+        "description": "ClothesShop is a clothing e-commerce website. The goal of this project was to mimic real life e-commerce websites with as many features that characterize those websites as possible while improving my PHP and Javascript skills.<br>Design has been inspired by many different designs around the web, but the code has been written by hand."
+    },
+    {
+        "name": "TechForum",
+        "link": "https://tech-forum-wbdv.herokuapp.com/",
+        "images": [
+            "tf_home_1.png",
+            "tf_topic.png",
+            "tf_thread.png",
+            "tf_profile.png",
+            "tf_notifications.png",
+            "tf_search.png"
+        ],
+        "technologies": [
+            "<i class='fa-brands fa-html5'></i>",
+            "<i class='fa-brands fa-css3-alt'></i>",
+            "<i class='fa-brands fa-js'></i>",
+            "<i class='fa-brands fa-php'></i>",
+            "<i class='fa-brands fa-laravel'></i>"
+        ],
+        "functionalities": [
+            "Registration and login",
+            "Changing user profile attributes, such as avatar, username, location, signature...",
+            "Sending user a notification when someone responded to his message or thread",
+            "Overview of logged users past replies and threads",
+            "Overview of topics and subtopics within a category",
+            "Overview of threads within a topic",
+            "Sorting and filtering threads",
+            "Replying to a thread. User has a possibility to quote another reply and to attach images to his reply",
+            "Quick search of all threads with suggested threads with similar name instantly showing"
+        ],
+        "description": "TechForum is an online forum through which users can discuss technology related subjects. My goal with this project was to improve my PHP (Laravel) skills.<br>Design was inspired by different designs around the web, but the code has been written by hand."
+    },
+    {
+        "name": "Games",
+        "link": "https://darko104.github.io/games/",
+        "images": [
+            "gm_jigsaw_1.png",
+            "gm_jigsaw_2.png",
+            "gm_jigsaw_3.png",
+            "gm_jigsaw_4.png",
+            "gm_jigsaw_5.png",
+            "gm_tictac_1.png",
+            "gm_tictac_2.png",
+            "gm_memory_1.png"
+        ],
+        "technologies": [
+            "<i class='fa-brands fa-html5'></i>",
+            "<i class='fa-brands fa-css3-alt'></i>",
+            "<i class='fa-brands fa-js'></i>"
+        ],
+        "functionalities": [
+            "Jigsaw - calculating score based on different criterias",
+            "Jigsaw - skipping a game",
+            "Jigsaw - opening a tutorial for games",
+            "TicTacToe - playing against AI",
+            "TicTacToe - choosing your symbol against another player",
+            "Memory - choosing number of players"
+        ],
+        "description": "This project presents user with three simple and famous games which he can play alone or with his friends. Jigsaw is a recreation of 5 minigames from the longest running gameshow in Serbia called 'Slagalica'. TicTacToe is a classic paper and pencil game whose early variations can be traced back to Roman Empire. Memory game is a very popular board game played by both kids and adults. It can be played by multiple people."
+    }
+]

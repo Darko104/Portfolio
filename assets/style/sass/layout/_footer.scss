@@ -1,0 +1,44 @@
+/* Footer */
+footer {
+    @include flexBetweenCenter;
+    position: absolute;
+    padding: 25px $layoutSidePadding;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    background-color: #111111;
+    color: #808080;
+}
+#footer-bottom {
+    bottom: 0;
+}
+#footer-name {
+    font-family: DancingScript;
+    font-style: italic;
+}
+#footer-icons {
+    display: none;
+}
+/* Footer - Responsive */
+@media only screen and (max-width: 1000px) {
+    #footer-info {
+        @include flex(20px);
+    }
+    #footer-icons {
+        @include flex(10px);
+        
+        a {
+            display: initial;
+            font-size: 25px;
+            color: $greyText1;
+        }
+    }
+}
+@media only screen and (max-width: 875px) {
+    footer {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+        padding: 25px 50px;
+    }
+}
