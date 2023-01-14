@@ -1,4 +1,5 @@
 window.onload = function () {
+    pageManipulation.loadPage("home");
     $(document).on("click", ".page-link", function () {
         var pageName = $(this).data("page");
 
@@ -118,7 +119,7 @@ const pageManipulation = (() => {
 })();
 const animation = (() => {
     var top = 0;
-    var left = 610;
+    // var left = 610;
     var currentIteration = 0;
 
     animateIcon = () => {
@@ -126,10 +127,10 @@ const animation = (() => {
         $(icons[currentIteration]).animate({
             opacity: 1,
             top: top,
-            left: left
+            // left: left
         }, 400, function () {
             top += 40;
-            left += 30;
+            // left += 30;
 
             currentIteration += 1;
             if (currentIteration < icons.length) {

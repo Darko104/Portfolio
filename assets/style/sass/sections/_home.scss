@@ -1,27 +1,14 @@
 /* Home */
-$left: 610px;
 .float-icon {
-    position: absolute;
-    top: 0;
-    left: $left;
+    position: relative;
     opacity: 0;
     color: #404040;
     font-size: 30px;
 }
-// $top: 0px;
 #home {
-    @include flexBetweenCenter;
+    @include flex(initial);
     margin-top: 120px;
     position: relative;
-
-    @for $i from 1 through 5 {
-        .float-icon:nth-of-type(#{$i}) {
-            // top: $top;
-            left: $left;
-        }
-        // $top: calc(#{$top} + 40px);
-        $left: calc(#{$left} + 30px);
-    }
 }
 .slide-home {
     animation-name: slideHome;
@@ -32,7 +19,7 @@ $left: 610px;
   to {top: 0;}
 }
 #home-info {
-    width: fit-content;
+    width: 45%;
 }
 #home-title-line {
     margin-bottom: 30px;
@@ -58,7 +45,14 @@ $left: 610px;
         color: $highlightColor;
     }
 }
+#home-float-icons {
+    padding-left: 15px;
+    align-self: stretch;
+}
 #home-icons {
+    margin-left: auto;
+    margin-right: 0;
+
     ul {
         display: flex;
         flex-direction: column;
@@ -75,11 +69,14 @@ $left: 610px;
     }
 }
 /* Home - Responsive */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
     nav ul {
         gap: 20px;
     }
-    #home-icons {
+    #home-info {
+        width: 75%;
+    }
+    #home-float-icons {
         display: none;
     }
 }
@@ -95,8 +92,13 @@ $left: 610px;
         margin-top: 90px;
         padding: 0 50px;
     }
-    .float-icon {
+    #home-icons {
         display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #home-info {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 450px) {

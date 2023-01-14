@@ -24,6 +24,14 @@ footer {
     #footer-info {
         @include flex(20px);
     }
+}
+@media only screen and (max-width: 875px) {
+    footer {
+        flex-direction: column;
+        align-items: baseline;
+        gap: 20px;
+        padding: 25px 50px;
+    }
     #footer-icons {
         @include flex(10px);
         
@@ -32,13 +40,5 @@ footer {
             font-size: 25px;
             color: $greyText1;
         }
-    }
-}
-@media only screen and (max-width: 875px) {
-    footer {
-        flex-direction: column;
-        align-items: baseline;
-        gap: 20px;
-        padding: 25px 50px;
     }
 }
